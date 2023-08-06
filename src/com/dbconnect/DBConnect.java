@@ -176,8 +176,13 @@ public class DBConnect {
 					 }
 					   
 					 else {
-						 System.err.println("Please choose valid option/Reattempt the Quiz");
-						 getQuestions();
+						 System.err.println("Please choose valid option");
+						 System.out.print("Please select option>>");
+						 ans=sc.nextInt();
+						 if( rs.getInt(6)==ans)
+						  {
+							  mark+=1;
+						  }
 					 }
 					 ref++;
 					
